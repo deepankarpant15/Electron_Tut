@@ -187,10 +187,26 @@ All styles are in `App.css` and can be customized to match your preferences.
 - Check browser console for errors
 - Try refreshing the app
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+** Clean and reinstall dependencies:**
+
+-Delete node_modules and package-lock.json (or yarn.lock).
+-Run: 
+ ```bash
+  rm -r node_modules; rm package-lock.json
+  npm install
+   ```
+
+-(Use del or manually delete if rm doesn't work in PowerShell.)
+
+**Check for unnecessary native modules:**
+If you don't use @napi-rs/canvas or similar, remove it from your dependencies.
+Rebuild native modules for your platform:
+
+Run: npm rebuild
+** Try building again: **
+
+ ```bash
+   npm run build
+npm run dist:linux
+   ```
