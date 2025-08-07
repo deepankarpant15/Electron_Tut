@@ -29,7 +29,6 @@ A modern, feature-rich book reading application built with Electron and React. E
 - **Beautiful Design**: Clean, modern interface with smooth animations
 - **Responsive Layout**: Works perfectly on different screen sizes
 - **Dark Mode Support**: Automatic dark mode detection
-- **Keyboard Navigation**: Navigate with arrow keys and shortcuts
 
 ## 🚀 Getting Started
 
@@ -74,8 +73,8 @@ A modern, feature-rich book reading application built with Electron and React. E
 
 ### Opening a Book
 
-1. Click the "📖 Open Book" button on the welcome screen
-2. Select a text file (.txt) from your computer
+1. Click the "📖 Import Book" button on the welcome screen
+2. Select a pdf/epub file from your computer
 3. The book will load and display the first page
 
 ### Navigation
@@ -88,7 +87,6 @@ A modern, feature-rich book reading application built with Electron and React. E
 
 - **Add Bookmark**: Click "➕ Add Bookmark" to mark the current page
 - **View Bookmarks**: Click "🔖 Bookmarks" to see all your bookmarks
-- **Go to Bookmark**: Click "Go to" on any bookmark to jump to that location
 - **Delete Bookmark**: Click "Delete" to remove unwanted bookmarks
 
 ### Reading Progress
@@ -133,8 +131,6 @@ src/
 
 ### Page Flipping Animation
 
-The app uses Framer Motion to create realistic page turning animations:
-
 - Pages slide in from the right when going forward
 - Pages slide out to the left when going backward
 - Smooth opacity transitions for natural feel
@@ -149,15 +145,13 @@ The app uses Framer Motion to create realistic page turning animations:
 ### Bookmark System
 
 - Unique bookmarks with timestamps
-- Navigate directly to specific lines
 - Visual bookmark management interface
 - Persistent bookmark storage
 
 ### Recent Books
 
-- Shows last 10 books you've read
+- Shows last books you've read
 - Displays current page and last read date
-- Quick access to resume reading
 
 ## 🔧 Configuration
 
@@ -185,12 +179,11 @@ All styles are in `App.css` and can be customized to match your preferences.
 
 **Progress not saving**
 
-- Ensure electron-store is properly installed
+- Ensure electron is properly installed
 - Check console for error messages
 
 **Animations not working**
 
-- Ensure framer-motion is installed
 - Check browser console for errors
 - Try refreshing the app
 
@@ -201,18 +194,3 @@ All styles are in `App.css` and can be customized to match your preferences.
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Electron team for the amazing framework
-- React team for the UI library
-- Framer Motion for smooth animations
-- All contributors and users
-
----
-
-**Happy Reading! 📚✨**
